@@ -16,17 +16,15 @@ public class AddOrMultiply {
         Scanner sc = new Scanner(System.in);
 
         String numbers = sc.nextLine();
-        int front = Character.getNumericValue(numbers.charAt(0));
-        int result = 0;
+        int result = Character.getNumericValue(numbers.charAt(0));
 
         for(int i=0; i<numbers.length() - 1; i++) {
             int back = Character.getNumericValue(numbers.charAt(i+1));
-            if(front * back >= front + back) {
+            if(result * back >= result + back) {
                 result *= back;
             } else {
                 result += back;
             }
-            front = result;
         }
 
         System.out.println(result);
