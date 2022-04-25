@@ -24,25 +24,21 @@ public class Knight {
                 continue;
             }
 
-            // 상하로 이동했을 경우 -> y축에 -1, +1 해봄
-            if(i / 2 == 0) {
-                for (int j = -1; j < 2; j += 2) {
+            for (int j = -1; j < 2; j += 2) {
+                if(i / 2 == 0) { // 상하로 이동했을 경우 -> y축에 -1, +1 해봄
                     if (y + j < 0 || y + j > 7) { // 범위를 벗어날 경우 증감식으로
+                        System.out.println(x + "," + y);
                         continue;
                     }
-                    count++;
-                }
-            } else { // 좌우로 이동했을 경우 -> x축에 -1, +1 해봄
-                for (int j = -1; j < 2; j += 2) {
+                } else { // 좌우로 이동했을 경우 -> x축에 -1, +1 해봄
                     if (x + j < 0 || x + j > 7) { // 범위를 벗어날 경우 증감식으로
+                        System.out.println(x + "," + y);
                         continue;
                     }
-                    count++;
                 }
+                count++;
             }
         }
-
         System.out.println(count);
-
     }
 }
