@@ -1,4 +1,4 @@
-package p1.c1.complexity;
+package p1.complexity;
 
 // 시간 복잡도 계산 - N개의 데이터 합 계산 프로그램(반복문)
 public class Loop {

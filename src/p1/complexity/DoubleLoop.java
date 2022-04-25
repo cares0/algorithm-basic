@@ -1,4 +1,4 @@
-package p1.c1.complexity;
+package p1.complexity;
 
 // 시간 복잡도 계산 - 2중 반복문의 경우
 public class DoubleLoop {

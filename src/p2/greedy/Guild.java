@@ -1,4 +1,4 @@
-package p2.c1.greedy;
+package p2.greedy;
 
 
 import java.util.ArrayList;
